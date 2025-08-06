@@ -6,5 +6,5 @@ for i in range(0,rows):
         if j==i:
             print(nums[i][j],end=" ")
         else:
-            print(" ",end=" ")
+            print("*",end=" ")
     print()
