@@ -25,3 +25,4 @@ new_head = s.removeNthFromEnd(head, n)
 while new_head:
     print(new_head.val, end=" ")
     new_head = new_head.next
+ 
