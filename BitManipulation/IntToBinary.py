@@ -7,7 +7,7 @@ def Int2Binary(num:int)->str:
             result += "0"
         num = num//2
     result = result[::-1]
-    return result
+    return result            
 
 num = int(input())
 print(Int2Binary(num))
