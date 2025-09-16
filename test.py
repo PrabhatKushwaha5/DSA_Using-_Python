@@ -1,7 +1,16 @@
-nums = [1,3,6,7]
-n = 4
-minn = float("inf")
-for i in nums:
-    minn = min(i-n,minn)
-    ans = minn
-print(i)
+class Node:
+    def __init__(self, data):
+            self.data = data
+            self.next = None
+
+class Solution:    
+    def pairWiseSwap(self, head):
+        # code here
+        prev = head
+        curr = prev.next
+        while prev and prev.next:
+            prev = curr
+            curr = prev
+            prev = prev.next.next
+            curr = curr.next.next
+        return head
