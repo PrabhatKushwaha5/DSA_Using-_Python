@@ -30,19 +30,18 @@ class DoublyLL:
     
 
 
-# Driver Code
+
 dll = DoublyLL()
 
-# insertAtEnd -> (ये head पर insert कर रहा है)
+
 dll.insertAtEnd(10)
 dll.insertAtEnd(20)
 dll.insertAtEnd(30)
 
-# Append -> (ये last में insert कर रहा है)
+
 dll.Append(40)
 dll.Append(50)
 
-# Traverse Forward
 print("Forward Traversal:")
 curr = dll.head
 while curr:
@@ -50,10 +49,10 @@ while curr:
     curr = curr.next
 print("None")
 
-# Traverse Backward
+
 print("Backward Traversal:")
 curr = dll.head
-while curr and curr.next:   # सबसे last तक पहुँचने के लिए
+while curr and curr.next:   
     curr = curr.next
 while curr:
     print(curr.val, end=" <-> ")
