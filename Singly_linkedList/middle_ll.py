@@ -7,7 +7,7 @@ class LL:
     def __init__(self):
         self.head = None
 
-    # Append element at the end
+    
     def Append(self, data):
         new_node = Node(data)
         if not self.head:
@@ -18,7 +18,7 @@ class LL:
                 curr = curr.next
             curr.next = new_node
 
-    # Find middle node
+    
     def middle(self):
         slow = fast = self.head
         while fast is not None and fast.next is not None:
@@ -26,7 +26,7 @@ class LL:
             fast = fast.next.next
         return slow
     
-    # Traverse and print linked list
+    
     def Traversal(self):
         curr = self.head
         while curr:
@@ -34,7 +34,7 @@ class LL:
             curr = curr.next
 
 
-# ----------------- Main -----------------
+
 ll = LL()
 n = int(input("Enter number of elements: "))
 for i in range(n):
