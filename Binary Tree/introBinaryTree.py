@@ -1,0 +1,7 @@
+class Solution:
+    def countNodes(self, i):
+        # Code here
+        return 2**(i-1)
+    
+i = int(input())
+print(Solution().countNodes(i))
