@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def getRow(self, A):
         tri = []
         for i in range(A+1):
@@ -11,5 +11,7 @@ class Solution:
             tri.append(row)
         return tri[A]
 
-A = int(input("Enter number of Row: "))
+A = int(input("Enter row number: ").strip())
+
 print(Solution().getRow(A))
+
